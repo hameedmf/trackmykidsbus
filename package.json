@@ -9,6 +9,7 @@
     "react-dom": "^16.0.0",
     "react-live-clock": "^2.0.1",
     "react-scripts": "1.0.14",
+    "react-stripe-checkout": "^2.6.3",
     "react-tap-event-plugin": "^3.0.2",
     "react-transition-group": "^2.2.1",
     "semantic-ui-react": "^0.74.2"

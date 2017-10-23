@@ -12,6 +12,7 @@ import {
   Segment,
   Visibility
 } from 'semantic-ui-react';
+import Payments from './components/payments';
 
 const FixedMenu = () =>
   <Menu fixed="top" size="large">
@@ -20,9 +21,12 @@ const FixedMenu = () =>
         Home
       </Menu.Item>
       <Menu.Item as="a">Features</Menu.Item>
-      <Menu.Item as="a">Blog</Menu.Item>
+      <Menu.Item as="a">Blogs</Menu.Item>
       <Menu.Item as="a">About</Menu.Item>
       <Menu.Menu position="right">
+        <Menu.Item className="item">
+          <Button as="a">Pay Up</Button>
+        </Menu.Item>
         <Menu.Item className="item">
           <Button as="a">Log in</Button>
         </Menu.Item>
@@ -69,6 +73,9 @@ export default class HomepageLayout extends Component {
                 <Menu.Item as="a">About</Menu.Item>
                 <Menu.Item position="right">
                   <Button as="a" inverted>
+                    <Payments />
+                  </Button>
+                  <Button as="a" inverted style={{ marginLeft: '0.5em' }}>
                     Log in
                   </Button>
                   <Button as="a" inverted style={{ marginLeft: '0.5em' }}>

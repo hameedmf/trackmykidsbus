@@ -11,6 +11,7 @@ import Divider from 'material-ui/Divider';
 import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import { cyan500 } from 'material-ui/styles/colors';
 import AppBar from 'material-ui/AppBar';
+import Payments from './components/payments';
 
 const muiTheme = getMuiTheme({
   palette: {
@@ -26,6 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <Body />
+        <Payments />
       </div>
     );
   }
